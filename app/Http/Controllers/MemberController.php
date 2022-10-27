@@ -69,9 +69,9 @@ class MemberController extends Controller
 
         $products = new Member;
 
-        $products->name                 = $request['favoriteTransportation'];
-        $products->balance              = $request['name'];
-        $products->transportation       = $request['balance'];      
+        $products->name                 = $request['name'];
+        $products->balance              = $request['balance'];
+        $products->transportation       = $request['favoriteTransportation'];      
         $products->save();
 
         // Return Data
